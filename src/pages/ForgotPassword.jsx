@@ -16,7 +16,7 @@ function ForgotPassword() {
 
     try {
       // Verify email
-      await axios.post('http://localhost:8000/api/auth/verify-email', { email });
+      await axios.post('https://aj-electronics.onrender.com/api/auth/verify-email', { email });
       // If successful, navigate to reset password page
       navigate('/reset-password');
     } catch (err) {

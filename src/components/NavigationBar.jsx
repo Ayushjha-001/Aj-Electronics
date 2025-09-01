@@ -65,7 +65,7 @@ function NavigationBar({ cartItemCount }) {
       }
       setLoading(true);
       try {
-        const response = await axios.get(`http://localhost:8000/api/search?q=${query}`);
+        const response = await axios.get(`https://aj-electronics.onrender.com/api/search?q=${query}`);
         setSearchResults(response.data);
       } catch (error) {
         console.error('Error fetching search results:', error);

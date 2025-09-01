@@ -25,7 +25,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('https://fusion-electronics-api.vercel.app/api/auth/register', { name, email, password });
+      const response = await axios.post('https://aj-electronics.onrender.com/api/auth/register', { name, email, password });
       const token = response.data.token;
       localStorage.setItem('token', token);
       window.location.href = '/';
