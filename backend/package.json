@@ -1,0 +1,58 @@
+{
+  "name": "aj-electronics-backend",
+  "displayName": "Aj Electronics Backend",
+  "version": "1.0.0",
+  "description": "Backend server for Aj Electronics - MERN stack e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node seed/productSeeds.js dev",
+    "sync-weaviate": "node scripts/sync-weaviate-ids.js",
+    "weaviate-upsert": "node scripts/weaviate-upsert.js",
+    "weaviate-query": "node scripts/query-weaviate.js",
+    "faiss-upsert": "node scripts/build-faiss-index.js",
+    "faiss-search": "node scripts/search-faiss-index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "backend",
+    "server",
+    "express",
+    "mongoose",
+    "ecommerce"
+  ],
+  "author": "Aj",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayushjha-001/fullstack-ecommerce"
+  },
+  "bugs": {
+    "url": "https://github.com/Ayushjha-001/fullstack-ecommerce/issues"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "express-validator": "^7.2.0",
+    "faiss-node": "^0.5.1",
+    "http-proxy-middleware": "^3.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "weaviate-client": "^3.6.2",
+    "weaviate-ts-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "jest-circus": "^30.0.4",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.1.1"
+  }
+}
