@@ -12,7 +12,7 @@ function ProductDetails({ addToCart }) {
   useEffect(() => {
     async function fetchProduct() {
       try {
-        const { data } = await axios.get(`http://localhost:8000/api/products/${id}`);
+        const { data } = await axios.get(`https://aj-electronics.onrender.com/api/products/${id}`);
         setProduct(data);
       } catch (err) {
         setError(err);

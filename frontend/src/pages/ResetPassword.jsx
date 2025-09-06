@@ -29,7 +29,7 @@ function ResetPassword() {
 
     try {
       // Make request to reset password
-      await axios.post('http://localhost:8000/api/auth/reset-password', { email, password });
+      await axios.post('https://aj-electronics.onrender.com/api/auth/reset-password', { email, password });
       setSuccess('Password successfully reset. Redirecting to login...');
       setTimeout(() => navigate('/login'), 2000); // Redirect after 2 seconds
     } catch (err) {
