@@ -30,27 +30,27 @@ Product Details Page
 
 ## Screenshots
 ### Home Page
-[Home](screenshots/home.png)
+![Home](screenshots/home.png)
 
 Shows featured products and hero section.
 
 ### Shop / Explore Products
-[Explore](screenshots/explore.png)
+![Explore](screenshots/explore.png)
 Browse all available products.
 
 ### Search Functionality
 
 Search products instantly.
-[Search](screenshots/search.png)
+![Search](screenshots/search.png)
 
 ### Login Page
-[Login](screenshots/login.png)
+![Login](screenshots/login.png)
 
 ### Register Page
-[Register](screenshots/register.png)
+![Register](screenshots/register.png)
 
 ### Shopping Cart
-[Cart](screenshots/cart.png)
+![Cart](screenshots/cart.png)
 
 View selected items and total price.
 
